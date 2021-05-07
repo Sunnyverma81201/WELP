@@ -1,3 +1,4 @@
+/* for home section */
 *{
     margin: 0px;
     padding: 0px;
@@ -34,12 +35,14 @@
     color: white;
     text-decoration: none;
     font-family: 'Fascinate', cursive; 
+    
     transition: 0.3s;
     margin: 10px;
     font-size: 1.5rem;
 }
 .nav li a:hover{
     font-size:2rem;
+    cursor: pointer;
 }
 
 
@@ -59,14 +62,32 @@
 
 #maincontent{
     display:flex;
-justify-content: center;
+justify-content: space-between;
 align-items: center;
+margin-top: 3rem;
        
 }
 
 #maincontent p {
     width: 40%;
+    margin-left: 2rem;
+    font-family: 'Girassol', cursive;
+    font-size: 1.3rem;
+}
+
+#first{
+    margin-right: 2rem;
 }
 
 
+/* for about section */
+#aboutus{
+    display:flex;
+    justify-content:center;
+    align-item:center;
+    padding:1.5rem;
+    margin-top:4rem;
+  background-color: white;
 
+    font-size:2rem;
+}

@@ -22,8 +22,44 @@
       to avoid connecting the SDK to running emulators.
     -->
     <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+
+    <!-- link to google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fascinate&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Goblin+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Girassol&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- GOOGLE maps API -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=YouApiKeyHere"></script>
+    <script src="/dist/location-picker.min.js"></script>
     <!-- link to style -->
     <link rel="stylesheet" href="style.css" />
+    <style>
+      /* for input form*/
+      .data_entry_form {
+        margin: 3rem;
+        margin-top: 4rem;
+        z-index: 4;
+        text-align: center;
+      }
+
+      label {
+        font:
+      }
+
+      input[type="text"] {
+        padding: 10px;
+        border-radius: 5px;
+      }
+    </style>
   </head>
   <body>
     <!-- HTML Part Start here -->
@@ -37,46 +73,61 @@
                           >email
                           >social links
     -->
+    <div id="navbar">
+      <h2>WELP</h2>
+      <ul class="nav">
+        <li><a href="">Home</a></li>
+        <li><a href="/public/form.html">MEDICS</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- data form -->
     <div class="data_entry_form">
-        <form>
-      
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" placeholder="Your name">
-      
-          <label for="information_type">Info Type</label>
-          <select id="info_type" name="Info Type">
-            <option value="vaccine">Vaccine</option>
-            <option value="oxygen">Oxygen</option>
-            <option value="beds">Beds</option>
-            <option value="medics">Medicines</option>
-          </select>
-          
-          <label for="resource_location">Location</label>
-          <select id="info_type" name="Info Type">
-          </select>
+      <form>
+        <div id></div>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name" />
 
-          <label for="authenticity">Verified</label>
-          <input type="checkbox" id = "authenticity">
+        <label for="information_type">Info Type</label>
+        <select id="info_type" name="Info Type">
+          <option value="vaccine">Vaccine</option>
+          <option value="oxygen">Oxygen</option>
+          <option value="beds">Beds</option>
+          <option value="medics">Medicines</option>
+        </select>
 
-          <lable for="information">Information</lable>
-          <div id = information>
-            <!-- description -->
-            <input type="text" id="description" name="description" placeholder="Information Descriprion">
-            <!-- links -->
-            <input type="text" id="links" name="link" placeholder="Add LINK"> <button id = "Add Link">ADD</button>
-          </div>
+        <label for="resource_location">Location</label>
+        <select id="info_type" name="Info Type"></select>
 
-          <label for = "contact">Contact</label>
-          <div id="contact">
-            <input type ="tel" placeholder="Contact for the info.">
-            <label for="callable">can call?</label>
-            <input type="checkbox" id = "callable">
-            <input type = "email" placeholder="email for the info">
-          </div>
-          <input type="submit" value="Submit">
-      
-        </form>
-      </div>    
+        <label for="authenticity">Verified</label>
+        <input type="checkbox" id="authenticity" />
+
+        <lable for="information">Information</lable>
+        <div id="information">
+          <!-- description -->
+          <input
+            type="text"
+            id="description"
+            name="description"
+            placeholder="Information Descriprion"
+          />
+          <!-- links -->
+          <input type="text" id="links" name="link" placeholder="Add LINK" />
+          <button id="Add Link">ADD</button>
+        </div>
+
+        <label for="contact">Contact</label>
+        <div id="contact">
+          <input type="tel" placeholder="Contact for the info." />
+          <label for="callable">picking calls?</label>
+          <input type="checkbox" id="callable" />
+          <input type="email" placeholder="email for the info" />
+        </div>
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
     <!-- LINK TO javascript -->
     <script src="main.js"></script>
   </body>

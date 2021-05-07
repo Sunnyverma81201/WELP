@@ -81,13 +81,20 @@ margin-top: 3rem;
 
 
 /* for about section */
-#aboutus{
+#aboutinfo{
     display:flex;
     justify-content:center;
     align-item:center;
     padding:1.5rem;
     margin-top:4rem;
-  background-color: white;
 
-    font-size:2rem;
+color:black;
+font-family: 'Permanent Marker', cursive;
+    font-size:4rem;
+}
+
+#smallcontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

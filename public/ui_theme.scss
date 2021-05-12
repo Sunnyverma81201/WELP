@@ -10,10 +10,10 @@ body{
     min-height: 100%;
 }
 
-.header{
-  height: 100vh;
-  text-align: center;
-}
+// .header{
+//   height: 100vh;
+//   text-align: center;
+// }
 .main_navigation {
   overflow: hidden;
   background-color: #333;
@@ -74,4 +74,23 @@ body{
 
 .sticky + .content {
   padding-top: 60px;
+}
+
+#about{
+  padding: 10rem;
+}
+.data_entry_grid_form{
+  
+}
+.section{
+  width: 100vh;
+}
+footer{
+  padding: 1em;
+  color: #f2f2f2;
+  text-align: center;
+  background: #333;
+  margin: 0;
+  width: 100vw;
+  position: fixed;
 }

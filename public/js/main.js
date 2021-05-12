@@ -34,4 +34,3 @@ const firebaseConfig = {
   measurementId: "G-JSF4XKPM86",
 };
 const db = fire.firestore();
-db.settings({ timestampInSnapshots: true });

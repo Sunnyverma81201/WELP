@@ -56,26 +56,84 @@
     </div>
 
     <div class="content">
-      <div id="about">
+      <!-- medics section -->
+      <div id = "medics" class="section">
+        <div class = "data_entry_grid_form">
+      
+          <div class="name_lable lable">NAME</div>
+          <div class = "name_elements">
+            <input type="text" id="name" name="name" placeholder="Your name" />
+          </div>
+    
+          <div class="info_type_lable lable">Info Type</div>
+          <div class = "info_type_elements">
+            <select class="info_type" name="Info Type">
+              <option value="vaccine">Vaccine</option>
+              <option value="oxygen">Oxygen</option>
+              <option value="beds">Beds</option>
+              <option value="medics">Medicines</option>
+            </select>
+          </div>
+          
+          <div class="resource_location_lable lable">Location</div>
+          <div class="location_elements">
+            <select class="resource_location" name="Info Type">
+              <!-- to be filled afterwards -->
+            </select>
+          </div>
+          
+          <div class="verification_lable lable">Verified</div>
+          <div class="verification_elements">
+            <input type="checkbox" id="authenticity" />
+          </div>
+    
+          <div class="information_lable lable">Information</div>
+          <div class="information_elements">
+              <!-- description -->
+              <input
+                type="text"
+                id="description"
+                name="description"
+                placeholder="Information Descriprion"
+              />
+              <!-- links -->
+              <input type="text" id="links" name="link" placeholder="Add LINK" />
+              <button id="Add Link">ADD</button>
+          </div>
+    
+          <div class="contact_lable lable">Contact</div>
+          <div class="contact_elements">
+              <input type="tel" placeholder="contact" />
+              <div class="verification">
+                <input type="checkbox" id="callable"/><label class = "note_lable" for="callable">picking calls?</label>
+              </div>
+              <input type="email" placeholder="email" />
+          </div>
+          
+          <button class = "submit_button">SUBMIT</button>
+        </div>
+    
+      </div>
+
+      <!-- about section -->
+      <div id="about" class="section">
         <h2 class = "fragement_heading">ABOUT WELP</h2>
-        <div id="about_">
+        <div id="about_section">
           <h3 id="project_aim">OUR AIM</h3>
           <p id="aim">
             With this project we wanted to create a platform that can help
             people in need of medical help, also this is a platform on which
-            people can upload medical information.
+            people can upload medical information for others.
           </p>
-          <h3 id="off">WHAT WE OFFERS?</h3>
-          <p id="aim">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas
-            voluptatum rerum id veritatis harum voluptate est cupiditate eum
-            sunt fuga! Animi ipsum excepturi dignissimos ducimus necessitatibus
-            enim nam fugit suscipit.
+          <h3 id="project_motive">OUR MOTIVE</h3>
+          <p id="motive">
+            Our motive is <i>"WE TOGETHER CAN HELP"</i> with this moto we created <b>WELP</b>. Our motivation came from the people who tried to share the information related to the medical facilities during the pendamic on their social accounts but that information was only limited to a very small crowd. So, we wanted to increase the reach for both, the one who requires help and the one who can help to a larger scale based on the location.
           </p>
         </div>
       </div>
+      
     </div>
-    <footer>copyright&copy 2021WELP. All Right Reserved</footer>
+    <footer>copyright &copy 2021 WELP. All Right Reserved</footer>
     <!-- link to javascript -->
     <script type="text/javascript" src="js/main.js"></script>
   </body>

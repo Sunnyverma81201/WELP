@@ -42,59 +42,50 @@
     <script src="/dist/location-picker.min.js"></script>
     <!-- link to style -->
     <link rel="stylesheet" href="style.css" />
-    <style>
-      /* for input form*/
-      .data_entry_form {
-        margin: 3rem;
-        margin-top: 4rem;
-        z-index: -3;
-        text-align: center;
-      }
-
-      label {
-        /* font: */
-      }
-
-      input[type="text"] {
-        padding: 10px;
-        border-radius: 5px;
-      }
-    </style>
   </head>
   <body>
     <div id="navbar">
       <h2>WELP</h2>
       <ul class="nav">
-        <li><a href="">Home</a></li>
-        <li><a href="/public/form.html">Medics</a></li>
-        <li><a href="">About</a></li>
-        <li><a href="">Contact</a></li>
+        <li><a href="index.html">Home</a></li>
+       <li><a href="/public/form.html">Medics</a></li>
+       <li><a href="about.html">About</a></li>
+       <li><a href="">Contact</a></li>
       </ul>
     </div>
 
     <!-- data form -->
-    <div class="data_entry_form">
-      <form>
-        <div id></div>
-        <label for="name">Name</label>
+    <div class = "data_entry_grid_form">
+      
+      <div class="name_lable lable">NAME</div>
+      <div class = "name_elements">
         <input type="text" id="name" name="name" placeholder="Your name" />
+      </div>
 
-        <label for="information_type">Info Type</label>
-        <select id="info_type" name="Info Type">
+      <div class="info_type_lable lable">Info Type</div>
+      <div class = "info_type_elements">
+        <select class="info_type" name="Info Type">
           <option value="vaccine">Vaccine</option>
           <option value="oxygen">Oxygen</option>
           <option value="beds">Beds</option>
           <option value="medics">Medicines</option>
         </select>
-
-        <label for="resource_location">Location</label>
-        <select id="info_type" name="Info Type"></select>
-
-        <label for="authenticity">Verified</label>
+      </div>
+      
+      <div class="resource_location_lable lable">Location</div>
+      <div class="location_elements">
+        <select class="resource_location" name="Info Type">
+          <!-- to be filled afterwards -->
+        </select>
+      </div>
+      
+      <div class="verification_lable lable">Verified</div>
+      <div class="verification_elements">
         <input type="checkbox" id="authenticity" />
+      </div>
 
-        <lable for="information">Information</lable>
-        <div id="information">
+      <div class="information_lable lable">Information</div>
+      <div class="information_elements">
           <!-- description -->
           <input
             type="text"
@@ -105,18 +96,20 @@
           <!-- links -->
           <input type="text" id="links" name="link" placeholder="Add LINK" />
           <button id="Add Link">ADD</button>
-        </div>
+      </div>
 
-        <label for="contact">Contact</label>
-        <div id="contact">
-          <input type="tel" placeholder="Contact for the info." />
-          <label for="callable">picking calls?</label>
-          <input type="checkbox" id="callable" />
-          <input type="email" placeholder="email for the info" />
-        </div>
-        <input type="submit" value="Submit" />
-      </form>
+      <div class="contact_lable lable">Contact</div>
+      <div class="contact_elements">
+          <input type="tel" placeholder="contact" />
+          <div class="verification">
+            <input type="checkbox" id="callable"/><label class = "note_lable" for="callable">picking calls?</label>
+          </div>
+          <input type="email" placeholder="email" />
+      </div>
+      
+      <button class = "submit_button">SUBMIT</button>
     </div>
+
     <!-- LINK TO javascript -->
     <script src="main.js"></script>
   </body>

@@ -5,6 +5,15 @@
     box-sizing: border-box;
 }
 
+html{
+    height:100%;
+}
+body{
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 100%;
+    background:linear-gradient(#FC354C,#0ABFBC);
+}
 
 #navbar{
     display:flex;
@@ -48,11 +57,7 @@
     overflow: hidden;
 }
 
-
-
 #navbar::before{
-    content: "";
-    background:linear-gradient(#FC354C,#0ABFBC);
     position: absolute;
     top:0px;
     left:0px;
@@ -61,13 +66,13 @@
     z-index: -1;
     opacity: 0.7;
     overflow: hidden;
-    
 }
 
 #maincontent{
     display:flex;
 justify-content: space-between;
 align-items: center;
+z-index: 1;
 margin-top: 3rem;
 overflow: hidden;
        
@@ -153,10 +158,65 @@ overflow: hidden;
 }
 
 /* media query for about page */
-@media (max-width:800px){
+@media (max-width:600px){
     .nav{
         display: none;
     }
 }
 
 
+  /* for input form*/
+  .data_entry_grid_form {
+      display: grid;
+      margin: 1rem;
+      margin-left: .25vp;
+      border-radius: 1rem;
+      background-color: rgba(0,0,0,0.09);
+      grid-template-areas: 
+      'name_lable name_elements'
+      ;
+      padding: 1rem;
+  }
+
+  .data_entry_grid_form > div{
+      padding: .5rem;
+  }
+
+  .lable{
+      color: antiquewhite;
+      font-family:Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      text-align: center;
+  }
+  .note_lable{
+    color: antiquewhite;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: light;
+    font-size: smaller;
+    padding: 0.1em;
+    padding-left: .5em;
+}
+  .contact_elements{
+      display: grid;
+      grid-column: auto;
+  }
+
+  .verification{
+      padding: .2em;
+  }
+
+  .contact_elements > input{
+      max-width: 10em;
+  }
+
+  input,select,button{
+      padding: .3rem;
+      border-radius: 1rem;
+      border: 0;
+      margin-left: .2rem;
+  }
+  button{
+      color: aliceblue;
+      min-width: 2rem;
+      background-color: #FC354C;
+  }

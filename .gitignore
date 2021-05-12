@@ -66,5 +66,5 @@ node_modules/
 .env
 
 # sass files
-ui_theme.scss
-ui_theme.css.map
+/ui_theme.scss
+/ui_theme.css.map

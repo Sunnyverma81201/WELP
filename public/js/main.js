@@ -22,7 +22,7 @@ menuHamburger.addEventListener('click',() => {
 });
 
 // Firebase initialization
-const firebase = firebase.initalizeApp(firebaseConfig);
+const fire = firebase.initalizeApp(firebaseConfig);
 const firebaseConfig = {
   apiKey: "AIzaSyB8qG3xFLp4wWCd5cQU-po2DT6WNdy6bCE",
   authDomain: "welp-bba1e.firebaseapp.com",
@@ -33,5 +33,5 @@ const firebaseConfig = {
   appId: "1:168708457434:web:fedd854e09d6525c0d36e3",
   measurementId: "G-JSF4XKPM86",
 };
-const db = firebase.firestore();
+const db = fire.firestore();
 db.settings({ timestampInSnapshots: true });

@@ -17,11 +17,6 @@
     <script defer src="/__/firebase/8.4.3/firebase-analytics.js"></script>
     <script defer src="/__/firebase/8.4.3/firebase-remote-config.js"></script>
     <script defer src="/__/firebase/8.4.3/firebase-performance.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
     <!-- link to google fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Fascinate&display=swap"
@@ -43,11 +38,22 @@
     <link rel="stylesheet" type="text/css" href="ui_theme.css" />
   </head>
   <body>
-    <div class="header"></div>
-
+    <div class="header" id = "header">
+      <h1 id="logo">
+        WELP
+      </h1>
+      <div class="quote">
+        <font class="logo_part">W</font>E TOGETHER CAN H<font class="logo_part">ELP</font>
+      </div>
+      <div class="down">
+        <a href = "#content">
+          <div class = "arrow-down"></div>
+        </a>
+      </div>
+    </div>
     <div id="navbar" class="main_navigation">
-      <a class="active" href="index.html">WELP</a>
-      <a href="/public/form.html">Medics</a>
+      <a class="active" href="#header">WELP</a>
+      <a href="#medics">Medics</a>
       <a href="#about">About</a>
       <a href="">Contact</a>
       <a href="javascript:void(0);" id = "ham" class="ham">
@@ -55,7 +61,7 @@
       </a>
     </div>
 
-    <div class="content">
+    <div class="content" id = "content">
       <!-- medics section -->
       <div id = "medics" class="section">
         <div class = "data_entry_grid_form">
@@ -131,7 +137,7 @@
           </p>
         </div>
       </div>
-      
+
     </div>
     <footer>copyright &copy 2021 WELP. All Right Reserved</footer>
     <!-- link to javascript -->

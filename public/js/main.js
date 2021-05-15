@@ -22,11 +22,16 @@ menuHamburger.addEventListener('click',() => {
   }
 });
 
-// to close the nav bar as soon as any of the button is tapped/Clicked
+// for popup form
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+  getLocation();
+}
 
-navigationButton.addEventListener('click',() => {
-  menuHamburger.click;
-});
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+
 
 // Firebase initialization
 const fire = firebase.initalizeApp(firebaseConfig);

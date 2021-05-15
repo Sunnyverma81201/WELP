@@ -11,23 +11,32 @@ body {
   min-height: 100%;
 }
 
+.arrow-down a {
+  text-decoration: none;
+}
+
 .header {
   background-color: #46bdc5;
   min-height: 100vh;
   max-height: 100vh;
-  padding-top: 50vh;
+  padding-top: 160px;
   text-align: center;
 }
+
 .header #logo {
   font-size: 120px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: #267a80;
   font-weight: 900;
+  margin: 0;
 }
+
 .header .quote {
+  padding-top: 5px;
   color: #a8f8f8;
-  font-size: 40px;
+  font-size: 20px;
 }
+
 .header .quote .logo_part {
   color: #ac1831;
 }
@@ -36,9 +45,11 @@ body {
   overflow: hidden;
   background-color: #46bdc5;
 }
+
 .main_navigation .ham {
   display: none;
 }
+
 .main_navigation a {
   float: left;
   display: block;
@@ -49,15 +60,19 @@ body {
   font-size: 17px;
   font-weight: bold;
 }
+
 .main_navigation a:hover {
   background-color: #267a80;
   color: #ac1831;
   font-size: 20px;
+  -webkit-transition: 480ms;
   transition: 480ms;
 }
+
 .main_navigation a:hover .active {
   font-size: 20px;
 }
+
 .main_navigation a.active {
   background-color: #ac1831;
   padding-left: 3em;
@@ -67,13 +82,18 @@ body {
   color: white;
 }
 
+.fragement_heading {
+  color: #ac1831;
+}
+
 .content {
-  padding-top: 2em;
+  margin-top: 80px;
   padding: 16px;
 }
 
 .sticky {
   position: fixed;
+  overflow: auto;
   top: 0;
   width: 100%;
 }
@@ -102,36 +122,32 @@ footer {
   .main_navigation a:not(:first-child) {
     display: none;
   }
-
   .main_navigation a.ham {
     float: right;
     display: block;
   }
-
   .main_navigation.responsive {
     position: relative;
   }
-
   .main_navigation.responsive .ham {
     position: absolute;
     right: 0;
     top: 0;
   }
-
   .main_navigation.responsive a {
     float: none;
     display: block;
     text-align: center;
+    -webkit-transition: 0.5s;
     transition: 0.5s;
   }
-
   .section {
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
     max-width: fit-content;
   }
-
-  #about {
-    padding: 2em;
+  #motive i {
+    color: #46bdc5;
   }
 }
-
 /*# sourceMappingURL=ui_theme.css.map */

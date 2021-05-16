@@ -68,3 +68,4 @@ node_modules/
 # sass files
 /ui_theme.scss
 /ui_theme.css.map
+/config.js

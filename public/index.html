@@ -59,6 +59,10 @@
       <div id="medics" class="section">
         <button class="open-button" onclick="openForm()">SHARE INFORMATION</button>
         <div class="form-popup" id="myForm">
+          <div class="popup_top">
+            <div class="popup_title">FILL INFORMATION</div>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+          </div>
           <!-- name input -->
           <input type="text" id="name_input" class="textbox" placeholder="NAME" />
           <!--info properties container  -->
@@ -72,6 +76,7 @@
               <option value="medics">Medicines</option>
             </select>
             <!-- verification toggle -->
+            Verified
             <label class="switch">
               <input type="checkbox" id="verified_info" class="toggle" />
               <span class="slider"></span>
@@ -79,7 +84,7 @@
           </div>
           <!-- Location for resources -->
           <div class="location_retriver">
-            <button id="location_reciever">
+            LOCATION OF INFORMATION 
               <select name="state" id="countySel" size="1">
                 <option value="" selected="selected">Select Country</option>
                 </select>
@@ -88,12 +93,30 @@
                 </select>
                 <select name="district" id="districtSel" size="1">
                 <option value="" selected="selected">Please select State first</option>
-                </select><br>
-                
+                </select>
           </div>
 
+          <!-- information description and links -->
+          <div class="info_description_contatiner">
+            <textarea rows = "5" cols = "60" name="description" id="info_description" placeholder="Enter details here"></textarea>
+            <br>
+            <input type="text" name="links" id="description_links" placeholder="LINKS">
+            <button id = "add_links" class = "add_links">ADD</button>
+          </div>
 
-          <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+          <!-- contact details -->
+          <div class="contact_details">
+            <input type="tel" name="contact" id="phone_numbet" placeholder="CONTACT">
+            picking Calls
+            <label class="switch">
+              <input type="checkbox" id="can_pick_call" class="toggle" />
+              <span class="slider"></span>
+            </label>
+            <br>
+            <input type="email" name="email" id="email" placeholder="email@example.com">
+          </div>
+          <!-- submit button -->
+          <button type="submit" id = "info_form_submit" class = "submit">SUBMIT</button>
         </div>
       </div>
 

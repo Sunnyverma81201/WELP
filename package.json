@@ -1,0 +1,22 @@
+{
+  "name": "welp",
+  "version": "1.0.0",
+  "description": "a platform that can help people in need of medical help, also this is a platform on which people can upload medical information for others.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sunnyverma81201/WELP.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sunnyverma81201/WELP/issues"
+  },
+  "homepage": "https://github.com/Sunnyverma81201/WELP#readme",
+  "dependencies": {
+    "fs": "0.0.1-security"
+  }
+}

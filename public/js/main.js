@@ -2,10 +2,8 @@ var navbar = document.getElementById("navbar");
 var menuHamburger = document.getElementById("ham");
 // var navigationButton = document.getElementsByClassName("nav_button");
 var sticky = navbar.offsetTop;
-
-import locationFile from './location.json';
   
-var locationObject = locationFile
+// var locationObject = locationFile
 // code for sticky navigation bar
 window.onscroll = () => {
   if (window.pageYOffset >= sticky) {
@@ -17,22 +15,22 @@ window.onscroll = () => {
 
 // for testing purposes only
 window.onload = () => {
-  var countySel = document.getElementById("countySel"),
-      districtSel = document.getElementById("districtSel");
-  for (var country in locationObject) {
-    countySel.options[countySel.options.length] = new Option(country, country);
-  }
-  countySel.onchange = function () {
-    districtSel.length = 1; // remove all options bar first
-    if (this.selectedIndex < 1) return; // done
-    var district = locationObject[countySel.value];
-    for (var i = 0; i < district.length; i++) {
-      districtSel.options[districtSel.options.length] = new Option(
-        district[i],
-        district[i]
-      );
-    }
-  };
+  // var countySel = document.getElementById("countySel"),
+  //     districtSel = document.getElementById("districtSel");
+  // for (var country in locationObject) {
+  //   countySel.options[countySel.options.length] = new Option(country, country);
+  // }
+  // countySel.onchange = function () {
+  //   districtSel.length = 1; // remove all options bar first
+  //   if (this.selectedIndex < 1) return; // done
+  //   var district = locationObject[countySel.value];
+  //   for (var i = 0; i < district.length; i++) {
+  //     districtSel.options[districtSel.options.length] = new Option(
+  //       district[i],
+  //       district[i]
+  //     );
+  //   }
+  // };
 
   document.getElementById("myForm").style.display = "block";
 };
